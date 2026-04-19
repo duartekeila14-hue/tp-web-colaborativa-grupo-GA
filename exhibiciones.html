@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestras Exhibiciones</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    
+    <!--Contenedor principal: esta el header,nav,main y footer para el grid-->
+    <div class="container">
+        <!--Encabezado: contiene el título y subtítulo de la galeria-->
+        <header>
+            <h1>Galeria de Arte del País</h1>
+            <h2>Artistas Argentinos</h2>
+        </header>
+        <!--Menú de navegación principal del Sitio-->
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="exhibiciones.html">Exibiciones</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Exhibiciones</h2>
+            <p>Nuestra <strong> Galeria de Arte del País</strong> presenta una selección de exhibiciones de <em>artistas independientes argentinos</em>, cuyas obras nos muestran la diversidad cultural de nuestro país.</p>
+
+            <!--Información complementaria-->
+            <aside>
+                <p>
+                    <strong>Importante:</strong>Las Exibiciones son de entrada libre y gratuita.
+                    Consultá los horarios de atención antes de tu visita.
+                </p>
+            </aside>
+
+            <!--Sección: muestra actual
+            Artistas independientes de distintas provincias argentinas-->
+            <section>
+                <h2>Muestra Actual: Voces del Interior</h2>
+                <p>Una exibición colectiva que reúne obras de artistas independientes de distintas pronvicias argentinas</p>
+                <!--En este sector se encontraran las listas de los artistas en 2 columnas (no olvidarse)-->
+                <ul class="lista-grid">
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="assets/paisaje-salteño.jpg" alt="Obra de Alvarez Prado, Carolina: Paisaje Salteño">
+                                <figcaption>Alvarez Prado, Carolina: Paisaje Salteño</figcaption>
+                                <h3>Alvarez Prado, Carolina</h3>
+                                <p>Artista Nacida en Tilcara, provincia de jujuy el 26 de Noviembre de 1902 y fallecida en la misma ciudad el 31 de Diciembre de 1986.Artista impresionista, en sus pinturas plasmó los paisajes y la gente del noroeste argentino, especialmente escenas costumbristas de su provincia natal.</p>
+                            </figure>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="assets/videsygallinas.jpg" alt="Obra de Allende Dávila, Jorge Dima">
+                                <figcaption>Allende Dávila, Jorge Dima</figcaption>
+                            </figure>
+                            <h3>Allende Dávila, Jorge Dima</h3>
+                            <p>Nació en San Rafael en 1957. Egresado del Profesorado de Artes Visuales de San Rafael. Asistió a talleres y cursos de perfeccionamiento. Docente en escuelas secundarias y terciarias. Ilustró libros y portadas. Expuso individualmente en San Rafael, Malargüe, Luján de Cuyo, Ciudad de Mendoza, Villa Gesell y en la Ciudad de Buenos Aires.</p>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
