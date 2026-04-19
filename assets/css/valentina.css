@@ -132,7 +132,9 @@ summary {
 
 figure {
     margin: 0 0 16px 0;
+    text-align: center;
 }
+
 
 figcaption {
     font-size: 0.85em;
@@ -149,6 +151,22 @@ table {
     border: 1px solid #dee2e6;
 }
 
+table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #343a40;
+    padding: 8px;
+    word-wrap: break-word;
+}
+
+ul {
+    list-style-type: none;
+}
+
 thead {
     background-color: #343a40;
     color: #ffffff;
@@ -158,9 +176,50 @@ th {
     padding: 12px 14px;
     text-align: left;
     font-weight: bold;
+    border: 1px solid #343a40;
 }
 
 td {
     padding: 10px 14px;
     border: 1px solid #dee2e6;
+    background-color: #ffffff;
 }
+
+
+/*Listas de Artistas en 2 columnas*/
+
+.lista-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.lista-grid li {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 16px;
+    list-style-type: none;
+}
+
+/*aside: aca teniamos la informacion complementaria sobre las exibiciones*/
+
+aside {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 16px 20px;
+    margin: 24px 0;
+    border-radius: 4px;
+}
+
+aside p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
