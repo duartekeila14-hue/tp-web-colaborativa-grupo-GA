@@ -119,3 +119,9 @@ summary {
     font-weight: bold;
     color: #343a40;
 }
+
+/*grid para contacto.html*/
+.container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
