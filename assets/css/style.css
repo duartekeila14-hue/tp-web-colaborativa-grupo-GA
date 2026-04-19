@@ -1,0 +1,37 @@
+css
+/*Archivo: style.css
+Proyecto Galeria de Arte
+Sección a cargo: Contacto y Exibiciones
+Autora: Valentina Schibilbain
+Rama: rama-valentina
+Fecha 19/04/26
+
+
+Paleta de colores:
+#ffffff: blanco puro (fondos principales)
+#f8f9fa: gris muy claro (fondos secundarios)
+#dee2e6: gris suave (bordes y separadores)
+#343a40: gris carbon (texto y header)*/
+
+/*Nota: Solo contiene unicamente los estilos de las páginas contacto.html y exibicione.html*/
+
+/*sección CONTACTO
+Estilo especificos para contacto.html*/
+
+/*Flexbox para el formulario*/
+#formulario-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #f8f9fa;
+    padding: 24px;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+#formulario-contacto {
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    color: #343434;
+}
