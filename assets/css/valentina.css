@@ -125,3 +125,42 @@ summary {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
 }
+
+/*Sección de Exibiciones: solo estilos específicos para exibiciones.html*/
+
+/*gifure/figcaption: imagenes con descripción de obra*/
+
+figure {
+    margin: 0 0 16px 0;
+}
+
+figcaption {
+    font-size: 0.85em;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 6px;
+}
+
+/*Tablas de las próximas exibiciones*/
+table {
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 0.95em;
+    border: 1px solid #dee2e6;
+}
+
+thead {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+th {
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    padding: 10px 14px;
+    border: 1px solid #dee2e6;
+}
