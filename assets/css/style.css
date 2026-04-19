@@ -33,5 +33,89 @@ Estilo especificos para contacto.html*/
     width: 100%;
     font-weight: bold;
     font-size: 15px;
-    color: #343434;
+    color: #343440;
+}
+/*inputs de texto, email y telefono*/
+input [type="text"],
+input [type="email"],
+input [type="tel"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 1px solid #dee2e6;
+    font-size: 17px;
+    background-color: #ffffff;
+    color: #343a40;
+}
+
+/*focus-resalta el borde cuando el campo esta activo*/
+
+input [type="text"] :focus,
+input [type="email"] :focus,
+input [type="tel"] :focus {
+    border: 2px solid #343a40;
+}
+
+/*Select ocupa el 100% de ancho*/
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 17px;
+    background-color: #ffffff;
+    color: #343a40;
+}
+
+/*Textarea ocupa el 100% del ancho*/
+
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 0.95em;
+    background-color: #ffffff;
+    color: #343a40;
+    min-height: 120px;
+}
+
+/*.btn-enviar: boton de envio del formulario*/
+.btn-enviar {
+    background-color: #343a40;
+    color: #ffffff;
+    border: 1px solid #343a40;
+    padding: 12px 28px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/*cambia el color del boton al pasar el mouse por arriba*/
+.btn-enviar:hover {
+    background-color: #6c757d;
+}
+
+/*address - bloque de direccion e informcacion de contacto*/
+address {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    line-height: 2;
+}
+
+/*Horarios expandibles*/
+details {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+}
+
+summary {
+    font-weight: bold;
+    color: #343a40;
 }
