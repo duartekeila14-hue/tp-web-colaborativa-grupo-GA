@@ -247,3 +247,11 @@ img {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;   
 }
+
+.footer-content {
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: baseline; 
+    justify-content: center;
+}
