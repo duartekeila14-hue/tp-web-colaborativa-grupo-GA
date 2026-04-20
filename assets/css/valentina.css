@@ -223,3 +223,27 @@ img {
     max-width: 100%;
 }
 
+.main-exhibiciones h2 {
+    color: #343a40;
+    font-size: 1.5em;
+}
+
+.main-exhibiciones p {
+    line-height: 1.8;
+    color: #343a40;
+}
+
+.main-contacto h2 {
+    color: #343a40;
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #343A40;
+    margin-top:25px;
+    margin-bottom: 0px;
+    border: #031022;
+    border-top-style: solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;   
+}
