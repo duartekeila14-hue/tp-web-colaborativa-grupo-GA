@@ -29,11 +29,11 @@ Estilo especificos para contacto.html*/
     border: 1px solid #dee2e6;
 }
 
-#formulario-contacto {
+#formulario-contacto label {
     width: 100%;
     font-weight: bold;
-    font-size: 15px;
-    color: #343440;
+    font-size: 0.9em;
+    color: #343a40;
 }
 /*inputs de texto, email y telefono*/
 input [type="text"],
@@ -61,7 +61,7 @@ select {
     padding: 10px 12px;
     border: 1px solid #dee2e6;
     border-radius: 4px;
-    font-size: 17px;
+    font-size: 0.95em;
     background-color: #ffffff;
     color: #343a40;
 }
@@ -93,7 +93,7 @@ textarea {
 
 /*cambia el color del boton al pasar el mouse por arriba*/
 .btn-enviar:hover {
-    background-color: #6c757d;
+     background-color: #6c757d;
 }
 
 /*address - bloque de direccion e informcacion de contacto*/
@@ -124,6 +124,7 @@ summary {
 .container {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
 }
 
 /*Sección de Exibiciones: solo estilos específicos para exibiciones.html*/
@@ -224,8 +225,13 @@ img {
 }
 
 .main-exhibiciones h2 {
+    font-family: Arial, sans-serif;
     color: #343a40;
     font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
 }
 
 .main-exhibiciones p {
@@ -234,8 +240,33 @@ img {
 }
 
 .main-contacto h2 {
+    font-family: Arial, sans-serif;
     color: #343a40;
     font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+}
+
+.main-exhibiciones h3 {
+    font-family: Arial, sans-serif;
+    color: #343A40;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.main-contacto h3 {
+    font-family: Arial, sans-serif;
+    color: #343a40;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.main-contacto p {
+    line-height: 1.8;
+    color: #343A40;
+    text-align: left;
 }
 
 .footer-content {
