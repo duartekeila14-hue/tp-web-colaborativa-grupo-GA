@@ -4,19 +4,20 @@
 }
 
 body {
-    background-color: #c2cbea;
+    background-color: #dee2e6;
 }
 
 header {     
     background-color: #020913;
     margin-top: 0px;
     padding-bottom:8px;
+    border-radius: 3px;
 }
 
 .h1 {
     text-align: center;
     color: #ffff;
-    margin-left:45%;
+    margin-left:38%;
 }
 
 h3 {
@@ -33,7 +34,6 @@ nav {
     justify-content: space-between;
 }
 
-
 /*le damos estilo propio al parrafo de presentación*/
 .presentacion {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -44,8 +44,7 @@ nav {
     box-shadow:  4px 3px 3px#343A40;
     border-radius: 8px;
     margin: 8px;
-    padding: 5px;
-    
+    padding: 5px; 
 
 }
 
@@ -77,10 +76,6 @@ footer {
     justify-content: center;
 }
 
-
-
-
-
 a{                              /*color de los links del footer*/            
     color: #061427;
 }
@@ -89,15 +84,16 @@ a{                              /*color de los links del footer*/
 b {
     color: #031022;
 }
-.links {
+.links {       /*decoración de los links de navegación*/
     box-shadow:2px 1px 1px #b3b8ca9d;
     background-color: whitesmoke;
     border-radius: 5px;
     padding:3px;
     margin-right:0;
+    text-decoration: none;
 }
 
-.links:hover{
+.links:hover{   /*le damos a los botones de navegacion cuando se apoya el cursor encima del mismo*/
     background-color: #688497;
 }
 
