@@ -1,0 +1,125 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #dee2e6;
+}
+
+header {     
+    background-color: #020913;
+    margin-top: 0px;
+    padding-bottom:8px;
+    border-radius: 3px;
+}
+
+.h1 {
+    text-align: center;
+    color: #ffff;
+    margin-left:38%;
+}
+
+h3 {
+    text-align: center;
+    color:beige;
+    font-size: large;
+}
+
+nav {
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    align-items: baseline; 
+    justify-content: space-between;
+}
+
+/*le damos estilo propio al parrafo de presentación*/
+.presentacion {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(141, 148, 163);
+    box-shadow:  4px 3px 3px#343A40;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 5px; 
+
+}
+
+img {
+    width: 400px;
+    height: auto;
+}
+#el-rodeo{
+    width: 700px;
+    height: auto;
+    border-radius:10px;
+}
+ 
+footer {
+    background-color: #343A40;
+    margin-top:25px;
+    margin-bottom: 0px;
+    border: #031022;
+    border-top-style: solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;   
+}
+ 
+.social-links{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: baseline; 
+    justify-content: center;
+}
+
+a{                              /*color de los links del footer*/            
+    color: #061427;
+}
+
+
+b {
+    color: #031022;
+}
+.links {       /*decoración de los links de navegación*/
+    box-shadow:2px 1px 1px #b3b8ca9d;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:3px;
+    margin-right:0;
+    text-decoration: none;
+}
+
+.links:hover{   /*le damos a los botones de navegacion cuando se apoya el cursor encima del mismo*/
+    background-color: #688497;
+}
+
+ul li {
+    list-style-position: inside;
+}
+
+
+.contenedor {
+    margin-top:15px;
+    margin-bottom:5px;
+    display: flex;    
+    flex-direction: row; /* imagen arriba, texto abajo */
+    flex-wrap: wrap;        /* permite que bajen a otra fila si no entran */
+    gap: 8px;              /* espacio entre figuras */
+    align-items: center;     /* alineación vertical */
+    justify-content: space-around; /* alineación horizontal */
+    width: 100%;
+}
+
+.figures{
+    box-shadow:10px 5px 5px #343A40;
+    background-color: rgb(255, 255, 255);
+    padding-top:10px;
+    padding-bottom:30px;
+    padding-right:5px;
+    padding-left:5px;
+    border-radius: 5px;
+}
