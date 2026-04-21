@@ -36,23 +36,16 @@ Estilo especificos para contacto.html*/
     color: #343a40;
 }
 /*inputs de texto, email y telefono*/
-input [type="text"],
-input [type="email"],
-input [type="tel"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
     width: 100%;
     padding: 10px 12px;
-    border-radius: 1px solid #dee2e6;
-    font-size: 17px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 0.95em;
     background-color: #ffffff;
     color: #343a40;
-}
-
-/*focus-resalta el borde cuando el campo esta activo*/
-
-input [type="text"] :focus,
-input [type="email"] :focus,
-input [type="tel"] :focus {
-    border: 2px solid #343a40;
 }
 
 /*Select ocupa el 100% de ancho*/
@@ -123,7 +116,7 @@ summary {
 /*grid para contacto.html*/
 .container {
     display: grid;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
 
@@ -145,16 +138,12 @@ figcaption {
 }
 
 /*Tablas de las próximas exibiciones*/
-table {
+table{
     width: 100%;
     margin-bottom: 24px;
     font-size: 0.95em;
-    border: 1px solid #dee2e6;
-}
-
-table{
+    border: 1px solid #343A40;
     border-collapse: collapse;
-    width: 100%;
     table-layout: fixed;
 }
 
@@ -183,6 +172,7 @@ th {
 td {
     padding: 10px 14px;
     border: 1px solid #dee2e6;
+    color: #343A40;
     background-color: #ffffff;
 }
 
@@ -237,6 +227,7 @@ img {
 .main-exhibiciones p {
     line-height: 1.8;
     color: #343a40;
+    text-align: left;
 }
 
 .main-contacto h2 {
@@ -269,20 +260,106 @@ img {
     text-align: left;
 }
 
-.footer-content {
+
+footer {
     background-color: #343A40;
-    margin-top:25px;
-    margin-bottom: 0px;
-    border: #031022;
-    border-top-style: solid;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;   
+    color: #dee2e6;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
 
+footer {
+    border-top: 2px solid #dee2e6;
+}
+
+/*para párrafos dentro del footer*/
+footer p {
+    color: #dee2e6;
+    font-size: 0.85em;
+    text-align: center;
+    margin: 4px 0;
+}
+
+footer a {
+    color: #dee2e6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/*clase .footer-content*/
 .footer-content {
-    display:flex;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/*class .social-links*/
+.social-links {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li a {
+    color: #dee2e6;
+    font-size: 0.9em;
+}
+
+.social-links li a:hover {
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
     flex-direction: row;
-    gap:10px;
-    align-items: baseline; 
-    justify-content: center;
+    gap: 10px;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #343A40;
+    padding: 12px 24px;
+    width: 100%;
+}
+
+.h1 {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 0;
+}
+
+nav section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/*Clase .links: son los botones del menú de navegación*/
+
+.links {
+    border: 1px solid #ffffff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/*cambia el color cuando pasamos el mouse por arriba*/
+.links:hover {
+    background-color: #688497;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 32px 24px;
 }
