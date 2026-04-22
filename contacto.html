@@ -1,11 +1,79 @@
+
+<!--Página: Exibiciones
+Descripción Página de contactos
+Autora: Valentina Schibilbain-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctanos</title>
+    <link rel="stylesheet" href="assets/css/valentina.css">
 </head>
 <body>
-    
+    <div class="container">
+        <!--Parte Principal: contiene el título y subtítulo del organismo y el menú-->
+        <nav>
+            <h1 class="h1"><i>Galeria de Arte del País</i></h1>
+            <section>
+                <a href="index.html" class="links">Home</a>
+                <a href="artistas.html" class="links">Artistas</a>
+                <a href="exhibiciones.html" class="links">Exhibiciones</a>
+                <a href="contacto.html" class="links">Contacto</a>
+            </section>
+        </nav>
+        <main class="main-contacto">
+            <!--Información de contactos-->
+            <h2>Contáctanos</h2>
+            <section>
+                <h3>Información de Contacto</h3>
+                <address>
+                    <p>Teléfono : (0370) 226-8923</p>
+                    <p>Dirección: Avenida del Libertador 1473, en el barrio de Recoleta, Ciudad Autónoma de Buenos Aires, Argentina</p>
+                    <p>Email: <a href="mailto:GaleriaDeArte@gmail.com"> GaleriaDeArte@gmail.com</a></p>
+                </address>
+            </section>
+            <!--Consultas-->
+            <form id="formulario-contacto" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="tu@gmail.com required" required>
+                
+                <label for="Teléfono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="(0370) 000-000">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Escribí tu mensaje acá..."></textarea>
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+
+            <!--Aca se encuentran los horarios expandibles-->
+            <details>
+                <summary>Horarios de Atención</summary>
+                <p>Lunes a Viernes de: 8:30 a 17:30</p>
+                <p>Sábados de: 9:00 a 12:00</p>
+                <p>Domingos y feriados: Cerrado</p>
+            </details>
+            <section>
+                <h3>Ubicación</h3>
+                <a href="https://www.google.com/maps/place/Museo+Nacional+de+Bellas+Artes/@-34.5839894,-58.3930044,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccaa199c2f643:0x49e543b8331abe7d!8m2!3d-34.5839894!4d-58.3930044!16s%2Fm%2F02q4458?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D">Ver en Google Maps</a>
+                <figure>
+                    <img src="assets/mapa del museo nacional de bellas artes.png" alt="Museo Nacional de Bellas Artes">
+                </figure>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <ul class="social-links">
+                    <p><strong>© Galeria de Arte del País</strong> Todos los derechos reservados</p>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twiter</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

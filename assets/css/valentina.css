@@ -1,0 +1,365 @@
+css
+/*Archivo: style.css
+Proyecto Galeria de Arte
+Sección a cargo: Contacto y Exibiciones
+Autora: Valentina Schibilbain
+Rama: rama-valentina
+Fecha 19/04/26
+
+
+Paleta de colores:
+#ffffff: blanco puro (fondos principales)
+#f8f9fa: gris muy claro (fondos secundarios)
+#dee2e6: gris suave (bordes y separadores)
+#343a40: gris carbon (texto y header)*/
+
+/*Nota: Solo contiene unicamente los estilos de las páginas contacto.html y exibicione.html*/
+
+/*sección CONTACTO
+Estilo especificos para contacto.html*/
+
+/*Flexbox para el formulario*/
+#formulario-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #f8f9fa;
+    padding: 24px;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+#formulario-contacto label {
+    width: 100%;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #343a40;
+}
+/*inputs de texto, email y telefono*/
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 0.95em;
+    background-color: #ffffff;
+    color: #343a40;
+}
+
+/*Select ocupa el 100% de ancho*/
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 0.95em;
+    background-color: #ffffff;
+    color: #343a40;
+}
+
+/*Textarea ocupa el 100% del ancho*/
+
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 0.95em;
+    background-color: #ffffff;
+    color: #343a40;
+    min-height: 120px;
+}
+
+/*.btn-enviar: boton de envio del formulario*/
+.btn-enviar {
+    background-color: #343a40;
+    color: #ffffff;
+    border: 1px solid #343a40;
+    padding: 12px 28px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/*cambia el color del boton al pasar el mouse por arriba*/
+.btn-enviar:hover {
+     background-color: #6c757d;
+}
+
+/*address - bloque de direccion e informcacion de contacto*/
+address {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    line-height: 2;
+}
+
+/*Horarios expandibles*/
+details {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+}
+
+summary {
+    font-weight: bold;
+    color: #343a40;
+}
+
+/*grid para contacto.html*/
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/*Sección de Exibiciones: solo estilos específicos para exibiciones.html*/
+
+/*gifure/figcaption: imagenes con descripción de obra*/
+
+figure {
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+
+figcaption {
+    font-size: 0.85em;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 6px;
+}
+
+/*Tablas de las próximas exibiciones*/
+table{
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 0.95em;
+    border: 1px solid #343A40;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #343a40;
+    padding: 8px;
+    word-wrap: break-word;
+}
+
+ul {
+    list-style-type: none;
+}
+
+thead {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+th {
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #343a40;
+}
+
+td {
+    padding: 10px 14px;
+    border: 1px solid #dee2e6;
+    color: #343A40;
+    background-color: #ffffff;
+}
+
+
+/*Listas de Artistas en 2 columnas*/
+
+.lista-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.lista-grid li {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 16px;
+    list-style-type: none;
+}
+
+/*aside: aca teniamos la informacion complementaria sobre las exibiciones*/
+
+aside {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 16px 20px;
+    margin: 24px 0;
+    border-radius: 4px;
+}
+
+aside p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-exhibiciones h2 {
+    font-family: Arial, sans-serif;
+    color: #343a40;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+}
+
+.main-exhibiciones p {
+    line-height: 1.8;
+    color: #343a40;
+    text-align: left;
+}
+
+.main-contacto h2 {
+    font-family: Arial, sans-serif;
+    color: #343a40;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+}
+
+.main-exhibiciones h3 {
+    font-family: Arial, sans-serif;
+    color: #343A40;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.main-contacto h3 {
+    font-family: Arial, sans-serif;
+    color: #343a40;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.main-contacto p {
+    line-height: 1.8;
+    color: #343A40;
+    text-align: left;
+}
+
+
+footer {
+    background-color: #343A40;
+    color: #dee2e6;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+footer {
+    border-top: 2px solid #dee2e6;
+}
+
+/*para párrafos dentro del footer*/
+footer p {
+    color: #dee2e6;
+    font-size: 0.85em;
+    text-align: center;
+    margin: 4px 0;
+}
+
+footer a {
+    color: #dee2e6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/*clase .footer-content*/
+.footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/*class .social-links*/
+.social-links {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li a {
+    color: #dee2e6;
+    font-size: 0.9em;
+}
+
+.social-links li a:hover {
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #343A40;
+    padding: 12px 24px;
+    width: 100%;
+}
+
+.h1 {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 0;
+}
+
+nav section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/*Clase .links: son los botones del menú de navegación*/
+
+.links {
+    border: 1px solid #ffffff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/*cambia el color cuando pasamos el mouse por arriba*/
+.links:hover {
+    background-color: #688497;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 32px 24px;
+}
