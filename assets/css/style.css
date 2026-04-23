@@ -1,0 +1,179 @@
+git*{ 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f8f9fa;
+    color: #2a2420;
+}
+.header-principal {
+    background-color: #343a40;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    padding: 0.8% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+   border-bottom: 2px solid #343a40;
+}
+.h1-principal{
+    font-size: 1.8rem;
+    letter-spacing: 0.2em;
+    color: #222831;
+    font-style: italic;
+    margin: 0%;
+}
+.nav-principal{
+    display: flex;
+    gap: 1rem;
+}
+.nav-principal a{
+    display: inline-block;
+    text-decoration: none;
+    color: #343a40;
+    margin-left: 2rem;
+    font-weight: 600;
+    border-radius: 999px;
+    border: solid 2px #ffffff;
+    background-color: #dee2e6;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+    padding: 10px 20px;
+}
+.nav-principal a:hover{
+    background-color: #ffffff;
+    border-color: #343a40;
+    color: #343A40;
+}
+.main-prncipal{
+    background-color: #222831;
+    margin-bottom: 0.4rem;
+}
+.seccion-conoce{
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+.seccion-h2{
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #343A40;
+}
+.seccion-p{
+    font-size: 1.1rem;
+    color: #343A40;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+.galeria_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: 10px;
+    color:#1f2630;
+    width: 100%;
+}
+.section-tittle{
+    font-size: 2.8rem;
+    line-height: 1.2;
+    font-weight: 550px;
+    margin: 0 0 15px 0;
+    flex-direction: column;
+    gap: 20px 0;
+    color: #1f2630;
+}
+.section-p{
+    font-size: 1.1rem;
+    color: black;
+    max-width: 600px;
+    margin: 0;
+    line-height: 1.6;
+    font-style: italic;
+    min-height: 15px;
+}
+.Galeria{
+    display: grid !important;
+    grid-template-columns: repeat(3,1fr) !important;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: space-between;
+    padding: 20 20;
+    background-color:#ffffff;
+    border-left: 5px solid #222831;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.pintores{
+    display: block;
+    width: 100% !important;
+    background-color: #faf7f2;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    padding: 0%;
+}
+.pintores:hover{
+    transform: translateY(-8px);
+}
+.pintores summary img{
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+    margin: 0%;
+    outline: none;
+    list-style: none;
+    align-items: center;
+    padding: 0%;
+    outline: none;
+}
+.leyenda_pintura{
+    flex: 1;
+    padding: 15px;
+    border-top: 2px solid #343a40;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.leyenda_pintores strong{
+    font-size: 1.1rem;
+    color: #222831;
+}
+.Informacion_Obra{
+    padding: 15px;
+    background-color: #f9f9f9;
+    font: size 0.9em; 
+    line-height: 1.5;
+    border-top: 1px solid #ddd;
+}
+.footer-contenido{
+    background-color: #343A40;
+    margin-top:25px;
+    margin-bottom: 0px;
+    border: #031022;
+    border-top-style: solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: baseline;
+    justify-content: center;
+}
